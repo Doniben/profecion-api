@@ -1,5 +1,5 @@
 {
-  "name": "company-products-api",
+  "name": "profecion-api",
   "version": "1.0.1",
   "description": "A Company REST API with authentication and authorization",
   "main": "dist/index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaztWeb/company-products-api.git"
+    "url": "git+https://github.com/doniben/profecion-api.git"
   },
   "keywords": [],
-  "author": "Fazt",
+  "author": "Doniben",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FaztWeb/company-products-api/issues"
+    "url": "https://github.com/doniben/profecion-api/issues"
   },
-  "homepage": "https://github.com/FaztWeb/company-products-api#readme",
+  "homepage": "https://github.com/doniben/profecion-api#readme",
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",

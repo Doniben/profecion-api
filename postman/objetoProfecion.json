@@ -1,0 +1,46 @@
+{
+    "aplicacionProfecion" : {
+        "profesores":[
+            {
+                "identificacion": "123",
+                "nombre": "profesorejemplo",
+                "imagen": "urlentexto",
+                "idMateria": "PIMO-2021-3(materia debe ser unico en la base de datos)",
+                "encuestasEstudiantes": [
+                    {
+                        "calificacionTotalEncuesta": 5.0,
+                        "respuestas": "respuestasEnTexto",
+                        "promedioEstudiante": 5.0
+                    },
+                    {
+
+                    }
+                ]
+            }
+]}
+}
+
+{/* 
+ 1. solo un usuario administrador, es el unico que puede acceder a la aplicacion completa
+ 2. cualquier persona puede llenar encuesta (solo ven el formulario) aca va a haber un dropdown 
+ 
+ (en esta encuesta voy a llamar al backend para obtener un objeto de esta manera [{nombre, idMateria}, {nombre, idMateria}])
+ aca ya puedo hacer el dropdown con esa info.
+
+ 3. se debe enviar al backend cuando se crea una encuesta el idMateria y con eso sabemos donde se va a mater
+
+ 4. el profesor se registra y al registrarse mete un objeto profesor a la base de datos
+  con los items que muestra el objeto.
+
+
+  lista de endpoints del backend!!!:
+  1. retornar el objeto  profesorIdMateria [{nombre, idMateria}, {nombre, idMateria}] (se necesita para la encuesta)
+  1.5 crear encuesta: se debe enviar el objeto encuesta al backend y adicionalmente el idMateria
+  2.0 loggear al administrador el manda sus credenciales y se le retorna el token
+  2.5 retornar el objeto aplicacionProfecion- retorna todo y solo lo puede usar el administrador.
+  3. endpoint eliminar profesor recibe IdMateria solo lo puede usar el administrador.
+  4. crear or registrar profesor, se debe enviar un objeto con nombre idMateria y imagen. (todo el mundo lo puede usar)
+  
+
+
+*/}

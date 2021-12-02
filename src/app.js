@@ -5,7 +5,7 @@ import helmet from "helmet";
 
 import pkg from "../package.json";
 
-import productRoutes from "./routes/products.routes";
+import profesorRoutes from "./routes/profesor.routes";
 import usersRoutes from "./routes/user.routes";
 import authRoutes from "./routes/auth.routes";
 
@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 // Welcome Routes
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome to my Products API",
+    message: "Bienvenidos a la API de ProfeCión",
     name: app.get("pkg").name,
     version: app.get("pkg").version,
     description: app.get("pkg").description,
@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use("/api/products", productRoutes);
+app.use("/api/profesores", profesorRoutes);
 app.use("/api/users", usersRoutes);
 app.use("/api/auth", authRoutes);
 

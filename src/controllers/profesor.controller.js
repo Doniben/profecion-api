@@ -1,12 +1,14 @@
 import Profesor from "../models/Profesor";
 
 export const createProfesor = async (req, res) => {
-  const { nombre, materia, calificacionTotalEncuesta, promedioEstudiante } = req.body;
+  const { nombre, materia, cursos, estado, calificacionTotalEncuesta, promedioEstudiante } = req.body;
 
   try {
     const newProfesor = new Profesor({
       nombre, 
       materia, 
+      cursos, 
+      estado,
       calificacionTotalEncuesta, 
       promedioEstudiante
     });

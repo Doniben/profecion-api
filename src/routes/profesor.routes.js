@@ -10,13 +10,13 @@ router.get("/:profesorId", profesorCtrl.getProfesorById);
 
 router.post(
   "/",
-  [authJwt.verifyToken, authJwt.isAdmin],
+  //[authJwt.verifyToken, authJwt.isAdmin],
   profesorCtrl.createProfesor
 );
 
 router.put(
   "/:profesorId",
-  [authJwt.verifyToken, authJwt.isProfesor],
+  //[authJwt.verifyToken, authJwt.isProfesor],
   profesorCtrl.updateProfesorById
 );
 

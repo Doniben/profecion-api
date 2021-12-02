@@ -10,6 +10,14 @@ const profesorSchema = new Schema(
       type: String,
       required: true,
     },
+    cursos: {
+      type: String,
+      required: false,
+    },
+    estado: {
+      type: Boolean,
+      required: false,
+    },
     calificacionTotalEncuesta: {
       type: Number,
       required: false,
